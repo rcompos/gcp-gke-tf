@@ -1,0 +1,13 @@
+credentials        = "~/keys/tf-gcp-keyfile.json"
+project_id         = "scandalizer"
+region             = "us-west3"
+#zones              = ["us-west3-a", "us-west3-b", "us-west3-c"]
+zones              = ["us-west3-a", "us-west3-b"]
+name               = "furious-george"
+machine_type       = "g1-small"
+min_count          = 1
+max_count          = 3
+disk_size_gb       = 20
+initial_node_count = 1
+service_account    = ""
+#node_pool_default_meta = "gke-tf-alpha-node-pool"
