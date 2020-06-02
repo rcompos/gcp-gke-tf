@@ -1,7 +1,7 @@
 module "gke" {
   source                     = "terraform-google-modules/kubernetes-engine/google"
 
-  version                    = "v8.1.0"
+  version                    = "v9.2.0"
   project_id                 = var.project_id
   region                     = var.region
   zones                      = var.zones
@@ -24,7 +24,8 @@ module "gke" {
       local_ssd_count    = 0
       disk_size_gb       = var.disk_size_gb
       disk_type          = "pd-standard"
-      image_type         = "COS"
+      #image_type         = "COS"
+      image_type         = var.image_type
       auto_repair        = true
       auto_upgrade       = true
       #service_account    = var.service_account

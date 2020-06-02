@@ -28,6 +28,11 @@ variable "machine_type" {
   description = "Type of the node compute engines."
 }
 
+variable "image_type" {
+  type        = string
+  description = "Type of the node image."
+}
+
 variable "min_count" {
   type        = number
   description = "Minimum number of nodes in the NodePool. Must be >=0 and <= max_node_count."
