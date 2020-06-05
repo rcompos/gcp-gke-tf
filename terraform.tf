@@ -1,7 +1,7 @@
 terraform {
   backend "gcs" {
-    credentials = "~/keys/tf-gcp-keyfile.json"
-    bucket      = "gcp-gke-tf-scandalizer"
+    credentials = "~/keys/terraform-sa-keyfile.json"
+    bucket      = "terraform-state-bloom-infra-dev"
     prefix      = "terraform/state"
   }
 }

@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 set -x
 
-PROJECT=scandalizer
-ACCOUNT=tf-gcp
+PROJECT=bloom-infra-dev
+ACCOUNT=terraform-sa
 
 gcloud projects add-iam-policy-binding ${PROJECT} --member serviceAccount:${ACCOUNT}@${PROJECT}.iam.gserviceaccount.com --role roles/container.admin
 gcloud projects add-iam-policy-binding ${PROJECT} --member serviceAccount:${ACCOUNT}@${PROJECT}.iam.gserviceaccount.com --role roles/compute.admin

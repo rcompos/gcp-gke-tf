@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 set -x
 
-PROJECT=scandalizer
-ACCOUNT=tf-gcp
+PROJECT=bloom-infra-dev
+ACCOUNT=terraform-sa
 
 #gcloud projects get-iam-policy <YOUR GCLOUD PROJECT>  \
 gcloud projects get-iam-policy ${PROJECT} \
